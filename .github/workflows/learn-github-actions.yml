@@ -11,3 +11,5 @@ jobs:
           node-version: '8'
       - run: npm install -g bats
       - run: bats -v
+      - name: Cache
+        uses: actions/cache@v3.3.2
